@@ -1,0 +1,103 @@
+/* === General configuration === */
+
+:root {
+    --font: system-ui, sans-serif;
+    --font-bold: system-ui, sans-serif;
+    --font-italic: system-ui, sans-serif;
+    --font-size: 16px;
+    --body-padding: 16px 24px;
+    --body-margin: 24px auto;
+    --body-width: 48em;
+    --avatar-width: 210px;
+    --padding: 8px 24px;
+    --fade-in: 0.01s linear;
+    --fade-out: 0.2s linear;
+}
+
+/* === Black colorscheme === */
+
+:root {
+    --bg: #0f0f0f;
+    --fg: #ffffff;
+    --link: #cccccc;
+}
+
+/* === Body === */
+
+body {
+    background: var(--bg); color: var(--fg);
+    font-family: var(--font); font-size: var(--font-size);
+    margin: var(--body-margin);
+    max-width: var(--body-width);
+}
+
+header, main, footer {
+    padding: var(--padding);
+}
+
+::selection {
+    background-color: var(--fg); color: var(--bg);
+}
+
+/* === Basic HTML elements === */
+
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-weight: 600;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--link);
+    transition: var(--fade-out);
+}
+a:hover, a:active {
+    color: var(--fg);
+    transition: var(--fade-in);
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* === Custom elements === */
+
+.card {
+    display: flex; justify-items: start baseline; align-items: center;
+    flex-direction: row;
+    gap: 0px 32px;
+}
+.info {
+    line-height: 1em;
+}
+.avatar {
+    border-radius: 100%;
+    width: var(--avatar-width);
+}
+
+.inline {
+    display: inline;
+}
+
+/* === Screen adaption code === */
+
+@media screen and (max-width: 1280px) {
+    :root {
+        --font-size: 16px;
+        --avatar-width: 168px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    :root {
+        --font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .card {
+        flex-direction: column;
+        gap: 32px 0px;
+        text-align: center;
+    }
+}

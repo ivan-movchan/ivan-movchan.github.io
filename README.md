@@ -1,2 +1,3 @@
 # ivan-movchan.github.io
-Ivan Movchan's homepage.
+
+This repository contains the source code of my personal homepage. See [LICENSE](LICENSE) for copyright and license details.

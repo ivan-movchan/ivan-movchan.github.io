@@ -1,25 +1,11 @@
 @font-face {
-	font-family: 'Open Sans';
-	src: url('../fonts/OpenSans.ttf') format('truetype');
+	font-family: 'Bitter';
+	src: url('../fonts/Bitter.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'Open Sans Italic';
-	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
-}
-
-:root {
-	--font: 'Open Sans';
-	--font-italic: 'Open Sans Italic';
-	--font-extra: 'Roboto', 'Segoe UI', 'Arial', system-ui, sans-serif;
-    --font-size: 1.25em;
-    --padding-top-bottom: 32px;
-    --padding-left-right: 32px;
-    --margin: 32px auto;
-	--width: 40em;
-	--border: 1px solid;
-    --shadow: 0px 0px 10px;
-	--transition: 0.2s ease;
+	font-family: 'Bitter Italic';
+	src: url('../fonts/Bitter-Italic.ttf') format('truetype');
 }
 
 :root {
@@ -30,7 +16,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --page-bg: #0f0f0f;
+        --page-bg: #181818;
         --page-fg: #ffffff;
 		--link-fg: #aaaaaa;
     }
@@ -41,7 +27,8 @@
 }
 
 * {
-	transition: var(--transition);
+	transition: 0.2s ease;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -49,10 +36,11 @@ html {
 }
 
 body {
-    font-family: var(--font), var(--font-extra); font-size: var(--font-size);
+    font-family: 'Bitter', serif; font-size: 1.25em;
     background: var(--page-bg); color: var(--page-fg);
-	margin: var(--margin); max-width: var(--width);
-    padding: var(--padding-top-bottom) var(--padding-left-right);
+	margin: 0px auto; padding: 32px;
+    max-width: 40em;
+    line-height: 1.5;
 	scroll-behavior: smooth;
 }
 
@@ -61,19 +49,18 @@ h1, h2, h3, h4, h5, h6, b {
 }
 
 a, summary {
-    color: var(--link-fg);
-	cursor: pointer;
+    cursor: pointer;
 	text-decoration: none;
-	border-bottom: var(--border) transparent;
+    color: var(--link-fg);
+	border-bottom: 1px solid transparent;
 }
 a:hover, a:active, summary:hover, summary:active {
 	color: var(--page-fg);
-	border-bottom: var(--border) var(--page-fg);
+	border-bottom: 1px solid var(--page-fg);
 }
 
 i {
-	font-family: var(--font-italic), var(--font-extra);
-	font-style: normal;
+	font-family: 'Bitter Italic', serif; font-style: normal;
 }
 
 ul {
@@ -82,21 +69,9 @@ ul {
 }
 
 img, picture {
-    max-width: calc(100vw - (var(--padding-left-right) * 2));
+    max-width: calc(100vw - 64px);
 }
 
 .center {
     display: flex; justify-content: center; align-items: center;
-}
-
-.page-center {
-    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-}
-
-.logo {
-    filter: drop-shadow(var(--shadow) transparent);
-}
-
-.logo:hover, .logo:active {
-    filter: drop-shadow(var(--shadow) var(--page-fg));
 }

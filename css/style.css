@@ -1,77 +1,39 @@
-@font-face {
-	font-family: 'Bitter';
-	src: url('../fonts/Bitter.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Bitter Italic';
-	src: url('../fonts/Bitter-Italic.ttf') format('truetype');
-}
-
 :root {
 	--page-bg: #ffffff;
     --page-fg: #000000;
-	--link-fg: #666666;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --page-bg: #181818;
         --page-fg: #ffffff;
-		--link-fg: #aaaaaa;
     }
 }
 
 ::selection {
-    background: var(--page-fg); color: var(--page-bg);
+    background: var(--page-fg);
+	color: var(--page-bg);
 }
 
-* {
-	transition: 0.2s ease;
-    scroll-behavior: smooth;
-}
-
-html {
-	background: var(--page-bg); color: var(--page-fg);
+html, body {
+	background: var(--page-bg);
+	color: var(--page-fg);
 }
 
 body {
-    font-family: 'Bitter', serif; font-size: 1.25em;
-    background: var(--page-bg); color: var(--page-fg);
-	margin: 0px auto; padding: 32px;
-    max-width: 40em;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+	'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', system-ui, sans-serif;
+	margin: 0px auto;
+	padding: 32px;
+    max-width: 42em;
     line-height: 1.5;
 	scroll-behavior: smooth;
 }
 
+body, pre, code {
+	font-size: 1.2em;
+}
+
 h1, h2, h3, h4, h5, h6, b {
 	font-weight: 600;
-}
-
-a, summary {
-    cursor: pointer;
-	text-decoration: none;
-    color: var(--link-fg);
-	border-bottom: 1px solid transparent;
-}
-a:hover, a:active, summary:hover, summary:active {
-	color: var(--page-fg);
-	border-bottom: 1px solid var(--page-fg);
-}
-
-i {
-	font-family: 'Bitter Italic', serif; font-style: normal;
-}
-
-ul {
-	list-style-type: square;
-	padding-left: 1em;
-}
-
-img, picture {
-    max-width: calc(100vw - 64px);
-}
-
-.center {
-    display: flex; justify-content: center; align-items: center;
 }

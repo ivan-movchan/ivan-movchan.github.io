@@ -270,14 +270,6 @@ ul, details > summary {
 }
 
 @media screen and (max-width: 1024px) {
-    .content {
-        padding: 16px;
-    }
-    
-    .lang-menu {
-        margin: 16px;
-    }
-    
     .split-box {
         flex-direction: column;
         justify-content: start;
@@ -286,15 +278,5 @@ ul, details > summary {
     
     .no-logo {
         height: 0px;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    body {
-        font-size: 20px;
-    }
-    
-    :root {
-        --cube-side: 192px;
     }
 }

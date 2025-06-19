@@ -1,4 +1,4 @@
-So, this is my website.
+This is my website.
 
 https://ivan-movchan.github.io
 

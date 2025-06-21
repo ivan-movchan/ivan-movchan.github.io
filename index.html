@@ -1,130 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Ivan Movchan">
-        <meta name="description" content="My own. Personal. Website.">
-        <meta name="keywords" content="Ivan, Movchan, Иван, Мовчан">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <title>Ivan Movchan</title>
-    </head>
-    <body>
-        <div class="lang-menu">
-            <a href="javascript:setLanguage('en');" class="button lang-menu-button lang-menu-button-left">EN</a>
-            <a href="javascript:setLanguage('ru');" class="button lang-menu-button lang-menu-button-right">RU</a>
-        </div>
-        <div class="content">
-            <header>
-                <img src="https://avatars.githubusercontent.com/u/199128433?v=4" class="avatar-image">
-                <h1 id="name">Ivan Movchan</h1>
-                <h4><i><span id="age">18 y. o.</span> / <span id="location">Russia, Saint Petersburg</span></i></h4>
-                <p id="description">A hobbyist developer with 8 years of experience, musician with 7 years of musical education (piano), amateur photographer and artist. Interested in free software and Web design. Love black colour, cats and {rock, metal, ambient, electronic} music.</p>
-            </header>
-            <main>
-                <h2 id="tech-stack">Stack<s>Overflow</s></h2>
-                <div class="tech-stack">
-                    <b class="tech-stack-item">HTML</b>
-                    <b class="tech-stack-item">CSS</b>
-                    <b class="tech-stack-item">JavaScript</b>
-                    <b class="tech-stack-item">Python&nbsp;3</b>
-                    <b class="tech-stack-item">Git</b>
-                    <b class="tech-stack-item tech-stack-item-inactive">Pascal&nbsp;(Delphi)</b>
-                    <b class="tech-stack-item tech-stack-item-inactive">GNU/Linux</b>
-                </div>
-                <h2 id="works">Works</h2>
-                <div class="split-box">
-                    <div class="box">
-                        <img src="/assets/images/projects/tinyssg.png" class="project-logo">
-                    </div>
-                    <div class="box">
-                        <h3>TinySSG</h3>
-                        <h4><i id="tinyssg-time">June 2025</i></h4>
-                        <p id="tinyssg-description">A minimalistic static site generator written in Python 3 and developed to be simple and easy to use.</p>
-                        <p><sub>
-                            <a href="https://github.com/ivan-movchan/tinyssg" target="_blank" class="button">GitHub</a>
-                        </sub></p>
-                    </div>
-                </div>
-                <div class="split-box">
-                    <div class="box">
-                        <img src="/assets/images/projects/hypercpu.png" class="project-logo">
-                    </div>
-                    <div class="box">
-                        <h3>HyperCPU Project</h3>
-                        <h4><i id="hypercpu-project-time">January 2025&nbsp;&mdash; present time</i></h4>
-                        <p id="hypercpu-project-description">The project of my online friend <a href="https://github.com/HyperWinX" target="_blank">@HyperWinX</a> which is dedicated to the development of experimental ISA and various tools for it. My contributions to this project include project artwork, website development, testing the project on various platforms and other minor things.</p>
-                        <p><sub>
-                            <a href="https://hypercpu-project.github.io" target="_blank" class="button" id="hypercpu-project-website">Website</a>
-                            <a href="https://github.com/HyperCPU-Project" target="_blank" class="button">GitHub</a>
-                        </sub></p>
-                    </div>
-                </div>
-                <div class="split-box">
-                    <div class="box">
-                        <img src="/assets/images/projects/anthill.png" class="project-logo">
-                    </div>
-                    <div class="box">
-                        <h3 id="anthill-landing">AntHill team landing</h3>
-                        <h4><i id="anthill-landing-time">May&nbsp;&mdash; August 2023</i></h4>
-                        <p id="anthill-landing-description">The landing website of AntHill team I had been co-working with until my departure in January 2024.</p>
-                        <p><strong id="anthill-landing-warning">The website is very buggy and is not adapted for mobile devices. Visit at your own risk.</strong></p>
-                        <p><sub>
-                            <a href="https://anthill-dev.github.io/Landing" target="_blank" class="button" id="anthill-landing-website">Website</a>
-                            <a href="https://github.com/AntHill-dev/Landing" target="_blank" class="button" id="anthill-landing-source-code">Source code</a>
-                        </sub></p>
-                    </div>
-                </div>
-                <div class="split-box">
-                    <div class="box">
-                        <img src="/assets/images/projects/lgrn-arts.png" class="project-logo">
-                    </div>
-                    <div class="box">
-                        <h3 id="lgrn-arts">LGRN Arts website</h3>
-                        <h4><i id="lgrn-arts-time">February&nbsp;&mdash; March 2023</i></h4>
-                        <p id="lgrn-arts-description">The homepage of my another online friend, a self-taught artist. I was the developer of the first website version which went online in February 2023, published on some free web hosting.</p>
-                        <p><sub>
-                            <a href="https://lgrn-arts.ch" target="_blank" class="button" id="lgrn-arts-website">Website</a>
-                        </sub></p>
-                    </div>
-                </div>
-                <div class="split-box">
-                    <div class="box">
-                        <div class="project-logo no-logo"></div>
-                    </div>
-                    <div class="box">
-                        <h3 id="my-website">My website</h3>
-                        <h4><i id="my-website-time">March 2021&nbsp;&mdash; present time</i></h4>
-                        <p id="my-website-description">The website you are reading now.</p>
-                        <p><sub>
-                            <a href="https://github.com/ivan-movchan/ivan-movchan.github.io" target="_blank" class="button" id="my-website-source-code">Source code</a>
-                        </sub></p>
-                    </div>
-                </div>
-                <div class="split-box">
-                    <div class="box">
-                        <div class="project-logo no-logo"></div>
-                    </div>
-                    <div class="box">
-                        <h3 id="my-photos">My photos</h3>
-                        <h4><i id="my-photos-time">June 2020&nbsp;&mdash; present time</i></h4>
-                        <p><sub>
-                            <a href="https://drive.google.com/drive/folders/1wiSTPXxtf2K1hpj5dMZkunEDwS8LqlWP?usp=drive_link" target="_blank" class="button">Google Drive</a>
-                        </sub></p>
-                    </div>
-                </div>
-                <h2 id="contacts">Contacts</h2>
-                <sub>
-                    <a href="https://github.com/ivan-movchan" target="_blank" class="button">GitHub</a>
-                    <a href="https://t.me/ivan_movchan" target="_blank" class="button">Telegram</a>
-                    <a href="mailto:ivan.movchan.07@gmail.com" target="_blank" class="button">E-mail</a>
-                </sub>
-            </main>
-            <br><br>
-            <footer>
-                <sub>Copyright &copy; 2021-2025 <span id="author">Ivan Movchan</span>. Powered by <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.</sub>
-            </footer>
-        </div>
-        <script src="/assets/js/script.js" lang="JavaScript"></script>
-    </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Ivan Movchan">
+<meta name="description" content="My own. Personal. Website.">
+<meta name="keywords" content="Ivan, Movchan, Иван, Мовчан">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>Ivan Movchan</title>
+</head>
+<body>
+<p align="center"><b>Ivan Movchan</b></p>
+<p align="center"><a href=".">English</a> | <a href="index.ru.html">Русский</a></p>
+<p>Hobbyist developer with 8 years of experience, musician and amateur photographer.</p>
+<p><u>Stack<s>Overflow</s>:</u></p>
+<ul>
+<li>Web: HTML, CSS, JavaScript.</li>
+<li>Programming: C, C++, Python, Pascal.</li>
+<li>Other: Git, GNU/Linux.</li>
+</ul>
+<p><u>Projects:</u></p>
+<ul>
+<li><a href="https://github.com/ivan-movchan/tinyssg">TinySSG</a> (June 2025)&nbsp;&mdash; a minimalistic static site generator written in Python 3.</li>
+<li><a href="https://hypercpu-project.github.io">HyperCPU Project</a> (January 2025&nbsp;&mdash; present time)&nbsp;&mdash; website, artwork, testing, programming.</li>
+<li><a href="https://anthill-dev.github.io/Landing">AntHill team landing website</a> (May&nbsp;&mdash; August 2023)&nbsp;&mdash; development.</li>
+<li><a href="https://lgrn-arts.ch">LGRN Arts website</a> (February 2023)&nbsp;&mdash; development.</li>
+<li><a href="https://drive.google.com/drive/folders/1wiSTPXxtf2K1hpj5dMZkunEDwS8LqlWP?usp=drive_link">Amateur photography</a> (June 2020&nbsp;&mdash; present time).</li>
+</ul>
+<p><u>Education:</u></p>
+<ul>
+<li>Musical education (piano, 2018&nbsp;&mdash; 2025).</li>
+</ul>
+<p><u>Contacts:</u></p>
+<ul>
+<li><a href="https://github.com/ivan-movchan">GitHub</a></li>
+<li><a href="https://t.me/ivan_movchan">Telegram</a></li>
+<li><a href="mailto:ivan.movchan.07@gmail.com">E-mail</a></li>
+</ul>
+<p align="center"><i>2025-06-21</i></p>
+</body>
 </html>

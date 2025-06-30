@@ -80,24 +80,3 @@ main, img {
 ul, details > summary {
     list-style-type: square;
 }
-
-.avatar-image {
-    width: 230px;
-    height: 230px;
-    border: 1px solid #ffffff;
-    float: right;
-    margin: 0px 0px 32px 32px;
-}
-
-.split-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-@media screen and (max-width: 540px) {
-    .split-box {
-        flex-direction: column;
-    }
-}

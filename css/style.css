@@ -1,0 +1,103 @@
+:root {
+    --bg: #272727;
+    --fg: #aaaaaa;
+}
+
+::selection {
+    background: var(--fg);
+    color: var(--bg);
+}
+
+* {
+    outline: none;
+    scrollbar-color: var(--fg) var(--bg);
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--fg);
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/bg.png');
+    background-position: center;
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+}
+
+header a {
+    color: #666666;
+}
+
+header a:hover {
+    color: #000000;
+}
+
+html, body {
+    background: var(--bg);
+    color: var(--fg);
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    margin: 0px auto;
+    padding: 16px 32px;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: #ffffff;
+}
+
+main, img {
+    max-width: 800px;
+}
+
+ul, details > summary {
+    list-style-type: square;
+}
+
+.avatar-image {
+    width: 230px;
+    height: 230px;
+    border: 1px solid #ffffff;
+    float: right;
+    margin: 0px 0px 32px 32px;
+}
+
+.split-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 540px) {
+    .split-box {
+        flex-direction: column;
+    }
+}

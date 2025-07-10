@@ -1,6 +1,15 @@
 :root {
-    --bg: #272727;
-    --fg: #aaaaaa;
+    --bg: #ffffff;
+    --fg: #000000;
+    --link: #0000ff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0f0f0f;
+        --fg: #ffffff;
+        --link: #0080ff;
+    }
 }
 
 ::selection {
@@ -21,62 +30,47 @@
     background: var(--fg);
 }
 
-a {
-    color: inherit;
-}
-
-a:hover {
-    color: #ffffff;
+a, summary {
+    text-decoration: none;
+    color: var(--link);
+    border-bottom: 1px solid var(--link);
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', system-ui, sans-serif;
-    font-size: 16px;
+    margin: 0px auto;
+    padding: 8px 32px 32px 32px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 1.25em;
     line-height: 1.4;
 }
 
-header {
-    width: 100%;
-    height: 100vh;
-    background-image: url('/images/bg.png');
-    background-position: center;
-    background-size: cover;
-    color: #000000;
-    text-align: center;
-}
-
-header a {
-    color: #666666;
-}
-
-header a:hover {
-    color: #000000;
+body, img {
+    max-width: 1280px;
 }
 
 html, body {
-    background: var(--bg);
+    background-color: var(--bg);
     color: var(--fg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+b, strong {
+    font-weight: 600;
 }
 
 img {
     width: 100%;
 }
 
-main {
-    margin: 0px auto;
-    padding: 16px 32px;
-}
-
-main h1, main h2, main h3, main h4, main h5, main h6 {
-    color: #ffffff;
-}
-
-main, img {
-    max-width: 800px;
-}
-
 ul, details > summary {
     list-style-type: square;
+}
+
+.avatar-image {
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
 }

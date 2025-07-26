@@ -1,14 +1,16 @@
 :root {
-    --bg: #ffffff;
-    --fg: #000000;
-    --link: #e5383b;
-    --alink: #b1a7a6;
+    --bg: #c3c2c4;
+    --fg: #231b24;
+    --link: #685966;
+    --alink: #94877b;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #0f0f0f;
-        --fg: #ffffff;
+        --bg: #231b24;
+        --fg: #a4a4ab;
+        --link: #94877b;
+        --alink: #d6dbe4;
     }
 }
 
@@ -48,7 +50,7 @@ body {
 }
 
 body, img {
-    max-width: 1024px;
+    max-width: 1280px;
 }
 
 html, body {
@@ -69,11 +71,11 @@ ul, details > summary {
 }
 
 blockquote {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 ul {
-    padding-left: 1em;
+    padding-left: 2em;
 }
 
 hr {
